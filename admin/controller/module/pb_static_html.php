@@ -65,7 +65,8 @@ class ControllerModulePbStaticHtml extends Controller {
 				'button_cancel',
 				'button_add_module',
 				'button_remove',
-				'entry_content' 
+				'entry_content',
+				'entry_heading'
 		);
 		
 		foreach ($text_strings as $text) {

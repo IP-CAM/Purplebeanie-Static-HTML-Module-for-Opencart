@@ -20,6 +20,7 @@
       <table id="module" class="list">
         <thead>
           <tr>
+            <td class="left"><?php echo $entry_heading;?></td>
             <td class="left"><?php echo $entry_content;?></td>
             <td class="left"><?php echo $entry_layout; ?></td>
             <td class="left"><?php echo $entry_position; ?></td>
@@ -32,6 +33,7 @@
         <?php foreach ($modules as $module) { ?>
         <tbody id="module-row<?php echo $module_row; ?>">
           <tr>
+            <td><input type="text" name="pb_static_html_module[<?php echo $module_row;?>][heading];?>" size="30" value="<?php echo $module['heading'];?>"/></td>
             <td><textarea name="pb_static_html_module[<?php echo $module_row;?>][content]" rows="10" cols="80"><?php echo $module['content']; ?></textarea></td>
             <td class="left"><select name="pb_static_html_module[<?php echo $module_row; ?>][layout_id]">
                 <?php foreach ($layouts as $layout) { ?>
@@ -81,7 +83,7 @@
         <?php } ?>
         <tfoot>
           <tr>
-            <td colspan="5"></td>
+            <td colspan="6"></td>
             <td class="left"><a onclick="addModule();" class="button"><span><?php echo $button_add_module; ?></span></a></td>
           </tr>
         </tfoot>
@@ -95,6 +97,7 @@ var module_row = <?php echo $module_row; ?>;
 function addModule() {	
 	html  = '<tbody id="module-row' + module_row + '">';
 	html += '  <tr>';
+      html += '    <td class="left"><input type="text" name="pb_static_html_module[' + module_row + '][heading]" /></td>';
     html += '    <td class="left"><textarea name="pb_static_html_module[' + module_row + '][content]" rows="10" cols="80"></textarea></td>';
 	html += '    <td class="left"><select name="pb_static_html_module[' + module_row + '][layout_id]">';
 	<?php foreach ($layouts as $layout) { ?>

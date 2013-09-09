@@ -22,6 +22,7 @@ $_['entry_position']      = 'Position:';
 $_['entry_status']        = 'Status:';
 $_['entry_sort_order']    = 'Sort Order:';
 $_['entry_content'] 	= 'Content';
+$_['entry_heading'] = 'Title';
 
 
 // Error
