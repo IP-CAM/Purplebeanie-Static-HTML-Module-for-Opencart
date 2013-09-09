@@ -1,5 +1,5 @@
 <div class="box">
-  <div class="box-heading"><?php echo $heading_title; ?></div>
+  <div class="box-heading"><?php echo (isset($heading_title) )? $heading_title : null; ?></div>
   <div class="box-content" style="text-align: center;">
   <!--<?php if ($customers) { ?>
     <table cellpadding="2" cellspacing="0" style="width: 100%;">
