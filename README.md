@@ -1,4 +1,4 @@
-Purplebeanie Static HTML module for Open Cart
+Purplebeanie Static HTML module for Opencart
 ==============
 
 Adds support for static html chunks to open cart module positions.
